@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,9 +20,25 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(80, 80, 80);
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(80, 80, 80);
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: darkgray;
         }
 
         td.num {
@@ -34,6 +51,7 @@
     <!-- 
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPITION
             THEAD
                 TR, TD, TH
             TBODY
@@ -42,10 +60,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
 
             </tr>
         </thead>
@@ -161,10 +180,19 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>212 583 750</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas atque ab eaque voluptatibus autem reprehenderit nam, qui, harum iure similique eligendi aperiam in optio. Dolor sint ipsum pariatur inventore hic?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam repellat unde voluptatem nihil doloremque, explicabo ratione officiis earum? Quisquam eveniet quo officia assumenda perferendis aut, ex voluptas veniam optio facere?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas atque ab eaque voluptatibus autem reprehenderit nam, qui, harum iure similique eligendi aperiam in optio. Dolor sint ipsum pariatur inventore hic?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam repellat unde voluptatem nihil doloremque, explicabo ratione officiis earum? Quisquam eveniet quo officia assumenda perferendis aut, ex voluptas veniam optio facere?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas atque ab eaque voluptatibus autem reprehenderit nam, qui, harum iure similique eligendi aperiam in optio. Dolor sint ipsum pariatur inventore hic?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam repellat unde voluptatem nihil doloremque, explicabo ratione officiis earum? Quisquam eveniet quo officia assumenda perferendis aut, ex voluptas veniam optio facere?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas atque ab eaque voluptatibus autem reprehenderit nam, qui, harum iure similique eligendi aperiam in optio. Dolor sint ipsum pariatur inventore hic?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam repellat unde voluptatem nihil doloremque, explicabo ratione officiis earum? Quisquam eveniet quo officia assumenda perferendis aut, ex voluptas veniam optio facere?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas atque ab eaque voluptatibus autem reprehenderit nam, qui, harum iure similique eligendi aperiam in optio. Dolor sint ipsum pariatur inventore hic?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam repellat unde voluptatem nihil doloremque, explicabo ratione officiis earum? Quisquam eveniet quo officia assumenda perferendis aut, ex voluptas veniam optio facere?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas atque ab eaque voluptatibus autem reprehenderit nam, qui, harum iure similique eligendi aperiam in optio. Dolor sint ipsum pariatur inventore hic?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam repellat unde voluptatem nihil doloremque, explicabo ratione officiis earum? Quisquam eveniet quo officia assumenda perferendis aut, ex voluptas veniam optio facere?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas atque ab eaque voluptatibus autem reprehenderit nam, qui, harum iure similique eligendi aperiam in optio. Dolor sint ipsum pariatur inventore hic?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam repellat unde voluptatem nihil doloremque, explicabo ratione officiis earum? Quisquam eveniet quo officia assumenda perferendis aut, ex voluptas veniam optio facere?</p>
 </body>
 </html>
