@@ -18,8 +18,21 @@ header, h1 {
     text-align: center;
 }
 
+span#burger{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+
+}
+
+span#burger:hover {
+    background-color: white;
+    color: black;
+}
 menu {
-     display: block;
+     display: none;
 }
 
 menu > ul {
@@ -37,7 +50,7 @@ menu > ul >li > a {
 }
 
 menu > ul > li > a:hover {
-    background-color: gray;
+    background-color: rgb(110, 110, 110);
 
 }
 
