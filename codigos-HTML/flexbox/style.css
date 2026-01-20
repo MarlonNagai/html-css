@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-color: oklch(27.8% 0.033 256.848);
+}
+
+.container {
+    display: flex;
+    gap: 10px; /*espaçamento entre os conteúdos.*/
+    height: 600px; 
+    background-color: oklch(62.3% 0.214 259.815);
+    /* justify-content: center; */
+    /* justify-content; alinha os conteúdos em vertical (usa bastante com o align-items).*/
+
+    align-items: start;
+    /* align-items; alinha os conteúdos em horizontal (usa bastante com o justify-content).*/
+
+    flex-flow: row nowrap; 
+    /* flex-flow; e o resumo do do flex-wrap e flex direction(use o flex-flow ao inves de usar os outros 2).*/
+     
+    /* flex-wrap: wrap; */
+    /* flex-wrap; faz com que os conteúdos dentro da área se adapte ou não (se muda de tamanho ou não.).*/
+
+    /* flex-direction: row; */
+    /* flex-direction serve para determinar de que posição começa os conteúdos em linha ou coluna.*/
+}
+
+.item {
+    width: 200px; 
+    height: 200px;
+    background-color: oklch(74.6% 0.16 232.661);
+}
+
+.item-3 {
+    align-self: center;
+    flex-grow: 0;
+    /* flex-grow; deixa os itens flexiveis para aumentar o tamanho*/
+    flex-shrink: 2;
+    /* flex-shrink;  deixa os itens flexiveis para diminuir o tamanho*/
+    flex-basis: 200px;
+    /* flex-basis; tamanho fixo*/
+    order: 1;
+}
+
+.item-6 {
+    order: 2;
+    flex: 1 0 200px;
+    /* flex= flex-grow, flex-shrink e flex-basis (nessa ordem).*/
+}
+
