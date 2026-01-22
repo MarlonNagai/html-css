@@ -26,13 +26,13 @@ header {
 }
 
 header > h1{
-    border: 1px dotted black;
-    text-shadow: 1px 1px 1px black;
+    /* border: 1px dotted black; */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.288);
     flex: 0 0 200px;
 }
 
 header > nav  {
-    border:  1px dotted black;
+    /* border:  1px dotted black; */
 
     display: flex;
     flex-flow: row wrap;
@@ -48,6 +48,7 @@ header > nav > a {
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
+    transition: 0.3s;
 }
 
 header > nav > a:hover {
@@ -65,3 +66,9 @@ main {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.253);
 }
 
+@media screen and(max-width: 600px) {
+    body {
+        background-color: red;
+    }
+}
+   
