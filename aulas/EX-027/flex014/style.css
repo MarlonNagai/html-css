@@ -30,13 +30,15 @@ header, section.normal {
 section.flex-content {
     padding: 20px;
     background-color: rgb(201, 201, 201);
-
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.466);
     display: flex;
     flex-flow: column nowrap;
 }
 
 section > article {
-    /* border: 2px dashed green; */
+     border: 2px dashed green; 
 }
 
 article.text-media {
@@ -75,3 +77,4 @@ div.media > iframe {
 
     width: 100%;
 }
+
