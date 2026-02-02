@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    height: 300px;
+    grid-template-rows: 100px 50px 1fr 50px ;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.caixa1{
+    background-color: lightblue;
+    grid-area: 1/1/2/-1;
+}
+
+.caixa2{
+    background-color: lightcoral;
+    grid-area: 2/1/3/-1;
+}
+
+.caixa3{
+    background-color: lightgreen;
+    grid-area: 3/1/-2/-2;
+    
+}
+.caixa4 {
+    background-color: lightpink;
+    grid-area: 3/-2/-2/-1;
+}
+
+.caixa5 {
+    background-color: lightslategray;
+    grid-area: -2/1/-1/-1;
+}
+
